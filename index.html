@@ -331,6 +331,77 @@
 
     /* Thème sombre pour listes natives */
     :root{ color-scheme: dark; }
+
+/* ===================== PHARMACIES DE GARDE ===================== */
+#pharmacieTable {
+  background: rgba(0, 60, 150, 0.25);   /* 🔹 fond bleu léger */
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;                          /* 🔹 occupe toute la largeur */
+  margin-top: 16px;
+  font-size: 22px;                      /* 🔹 texte plus grand */
+}
+
+#pharmacieTable th {
+  background: rgba(0, 80, 180, 0.4);
+  color: #ffffff;
+  font-size: 24px;                      /* 🔹 titres plus gros */
+  padding: 12px 8px;
+  text-align: left;
+}
+
+#pharmacieTable td {
+  padding: 10px 8px;                    /* 🔹 espace interne plus large */
+  vertical-align: middle;
+}
+
+/* Champs de saisie plus grands et lisibles */
+#pharmacieTable input[type="text"],
+#pharmacieTable textarea {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #f1f5f9;
+  background: rgba(255,255,255,0.07);
+  width: 100%;
+  resize: vertical;
+}
+
+/* Colonne Nom plus large */
+#pharmacieTable .pharm-nom input {
+  font-size: 26px;                      /* 🔹 noms encore plus visibles */
+  font-weight: 700;
+}
+
+/* Colonne Adresse avec plus de hauteur */
+#pharmacieTable .pharm-addr textarea {
+  min-height: 90px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* Colonne DECT mieux espacée */
+#pharmacieTable .pharm-dect input {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Style général : ombre légère pour détacher du fond */
+#pharmacieTable {
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+/* Améliore la lisibilité sur les lignes */
+#pharmacieTable tr:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+
+
+    
   </style>
 </head>
 <body>
